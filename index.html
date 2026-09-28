@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#f1ece6">
+<meta name="robots" content="noindex, nofollow">
+<title>Тебе письмо 💌</title>
+<meta name="description" content="У меня к тебе очень важный вопрос…">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Тебе письмо 💌">
+<meta property="og:description" content="У меня к тебе очень важный вопрос…">
+<meta property="og:url" content="https://h010grams.github.io/date/">
+<meta property="og:image" content="https://h010grams.github.io/date/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/comforter-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/montserrat-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- Общие SVG-фигуры: сердечки, нашивки, «мелковое» сердце -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <path id="heart-path" d="M50 88C22 66 2 48 2 27 2 12 13 2 27 2c10 0 18 6 23 14C55 8 63 2 73 2c14 0 25 10 25 25 0 21-20 39-48 61z"/>
+    <clipPath id="heart-clip"><use href="#heart-path"/></clipPath>
+    <radialGradient id="patch-grad" cx="36%" cy="30%" r="78%">
+      <stop offset="0" stop-color="#e5474e"/>
+      <stop offset=".55" stop-color="#c3212b"/>
+      <stop offset="1" stop-color="#921520"/>
+    </radialGradient>
+    <pattern id="satin" width="2.6" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(32)">
+      <rect width="1.1" height="12" fill="#fff" fill-opacity=".14"/>
+    </pattern>
+    <filter id="crayon" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <symbol id="i-heart" viewBox="0 0 100 90"><use href="#heart-path"/></symbol>
+    <symbol id="i-heart-line" viewBox="-4 -4 108 98">
+      <use href="#heart-path" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-patch" viewBox="-6 -6 112 102">
+      <use href="#heart-path" fill="url(#patch-grad)" stroke="#86111b" stroke-width="3.5"/>
+      <use href="#heart-path" fill="url(#satin)"/>
+      <use href="#heart-path" fill="none" stroke="#f27a80" stroke-width="1.6" stroke-dasharray="2.6 2.2" transform="translate(7.5 6.75) scale(.85)"/>
+    </symbol>
+    <symbol id="i-crayon" viewBox="-6 -6 112 102">
+      <g filter="url(#crayon)" fill="none" stroke="#c4262e" stroke-linecap="round" stroke-linejoin="round">
+        <path clip-path="url(#heart-clip)" stroke-width="2.4" d="M0.5 -5.0 L-38.5 97.8 L10.2 -4.3 L-31.6 95.9 L20.2 -5.4 L-19.8 94.5 L27.5 -7.0 L-11.7 96.3 L34.9 -7.1 L-3.3 97.7 L47.1 -7.4 L7.5 94.6 L55.7 -7.5 L14.3 97.5 L63.2 -7.1 L26.4 97.5 L72.8 -4.2 L34.3 96.7 L81.6 -4.2 L44.0 97.9 L93.6 -6.8 L52.2 94.7 L99.8 -7.7 L61.2 96.4 L108.4 -5.3 L70.5 95.2 L120.9 -6.1 L79.6 95.9 L129.6 -7.8 L90.8 94.1 L139.0 -4.6 L97.2 97.2 L146.7 -5.7 L106.3 94.2"/>
+        <use href="#heart-path" stroke-width="2.6"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<p class="board-title" aria-hidden="true">онлайн — <b>приглашение</b></p>
+
+<div class="page">
+
+  <!-- ============ 1. Обложка ============ -->
+  <header class="hero">
+    <div class="hero__photos">
+      <div class="love-lines" aria-hidden="true">
+        <span style="--d:.1s">love you i love you i love you i love you</span>
+        <span style="--d:.35s">i love you i love you i love you i love you</span>
+        <span style="--d:.6s">you i love you i love you i love you i love</span>
+        <span style="--d:.85s">love you i love you i love you i love you</span>
+        <span style="--d:1.1s">i love you i love you i love you i love you</span>
+      </div>
+
+      <figure class="polaroid polaroid--us">
+        <div class="polaroid__photo">
+          <img src="img/us.webp" width="760" height="813" alt="Мы вдвоём">
+        </div>
+        <figcaption><span class="ink">это</span> <span class="red">мы</span></figcaption>
+        <svg class="patch patch--hero" aria-hidden="true"><use href="#i-patch"/></svg>
+      </figure>
+
+      <figure class="polaroid polaroid--blank">
+        <div class="polaroid__photo polaroid__photo--blank"><span aria-hidden="true">?</span></div>
+        <figcaption>наше следующее фото</figcaption>
+      </figure>
+    </div>
+
+    <h1 class="equation">я <span class="plus">+</span> ты =</h1>
+
+    <svg class="brush-heart" viewBox="0 0 220 200" aria-hidden="true">
+      <defs>
+        <path id="bh" d="M170 178C150 168 110 150 84 138C50 122 30 90 44 62C56 38 92 36 106 64C116 40 150 22 170 42C188 62 176 110 152 156" transform="translate(108 108) scale(.92) translate(-108 -108)"/>
+        <filter id="brush" x="-15%" y="-15%" width="130%" height="130%">
+          <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" seed="4" result="warp"/>
+          <feDisplacementMap in="SourceGraphic" in2="warp" scale="6" xChannelSelector="R" yChannelSelector="G" result="w"/>
+          <feTurbulence type="fractalNoise" baseFrequency=".7 1.1" numOctaves="2" seed="9" result="grain"/>
+          <feDisplacementMap in="w" in2="grain" scale="3.4" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+        <mask id="brush-reveal" maskUnits="userSpaceOnUse" x="-20" y="-20" width="260" height="240">
+          <use class="draw" href="#bh" fill="none" stroke="#fff" stroke-width="60" stroke-linejoin="round"/>
+        </mask>
+      </defs>
+      <g mask="url(#brush-reveal)">
+        <g filter="url(#brush)" fill="none" stroke-linejoin="round">
+          <use href="#bh" stroke="#bc2229" stroke-width="38"/>
+          <use href="#bh" stroke="#8c141c" stroke-width="3.2" stroke-opacity="0.45" stroke-dasharray="58 7 25 10 109 24 85 30" transform="translate(108 108) scale(1.088) translate(-108 -108)"/>
+    <use href="#bh" stroke="#8c141c" stroke-width="2.0" stroke-opacity="0.31" stroke-dasharray="87 31 50 29 77 23 94 27" transform="translate(108 108) scale(1.070) translate(-108 -108)"/>
+    <use href="#bh" stroke="#8c141c" stroke-width="2.6" stroke-opacity="0.51" stroke-dasharray="118 14 109 31 103 27 36 33" transform="translate(108 108) scale(0.878) translate(-108 -108)"/>
+    <use href="#bh" stroke="#8c141c" stroke-width="3.6" stroke-opacity="0.41" stroke-dasharray="77 31 57 20 114 9 50 28" transform="translate(108 108) scale(0.977) translate(-108 -108)"/>
+    <use href="#bh" stroke="#8c141c" stroke-width="1.9" stroke-opacity="0.59" stroke-dasharray="100 34 50 32 108 17 87 32" transform="translate(108 108) scale(1.040) translate(-108 -108)"/>
+    <use href="#bh" stroke="#8c141c" stroke-width="2.4" stroke-opacity="0.49" stroke-dasharray="114 34 89 6 106 17 56 25" transform="translate(108 108) scale(1.123) translate(-108 -108)"/>
+    <use href="#bh" stroke="#8c141c" stroke-width="2.1" stroke-opacity="0.34" stroke-dasharray="89 34 111 22 50 9 102 27" transform="translate(108 108) scale(0.979) translate(-108 -108)"/>
+    <use href="#bh" stroke="#8c141c" stroke-width="2.9" stroke-opacity="0.41" stroke-dasharray="53 10 101 12 114 22 26 12" transform="translate(108 108) scale(0.930) translate(-108 -108)"/>
+    <use href="#bh" stroke="#8c141c" stroke-width="1.2" stroke-opacity="0.40" stroke-dasharray="110 25 104 15 72 18 92 18" transform="translate(108 108) scale(1.083) translate(-108 -108)"/>
+    <use href="#bh" stroke="#8c141c" stroke-width="2.8" stroke-opacity="0.45" stroke-dasharray="48 19 101 29 75 9 81 13" transform="translate(108 108) scale(0.937) translate(-108 -108)"/>
+    <use href="#bh" stroke="#8c141c" stroke-width="1.4" stroke-opacity="0.48" stroke-dasharray="82 20 73 31 34 22 79 21" transform="translate(108 108) scale(1.092) translate(-108 -108)"/>
+    <use href="#bh" stroke="#8c141c" stroke-width="3.2" stroke-opacity="0.58" stroke-dasharray="49 29 112 14 82 21 117 31" transform="translate(108 108) scale(0.941) translate(-108 -108)"/>
+    <use href="#bh" stroke="#8c141c" stroke-width="1.2" stroke-opacity="0.46" stroke-dasharray="57 24 71 12 57 22 82 16" transform="translate(108 108) scale(1.140) translate(-108 -108)"/>
+    <use href="#bh" stroke="#8c141c" stroke-width="1.8" stroke-opacity="0.42" stroke-dasharray="78 25 87 14 102 21 109 21" transform="translate(108 108) scale(1.128) translate(-108 -108)"/>
+    <use href="#bh" stroke="#8c141c" stroke-width="2.9" stroke-opacity="0.45" stroke-dasharray="106 31 84 16 71 27 45 25" transform="translate(108 108) scale(0.998) translate(-108 -108)"/>
+    <use href="#bh" stroke="#8c141c" stroke-width="2.6" stroke-opacity="0.40" stroke-dasharray="75 21 118 31 45 32 62 23" transform="translate(108 108) scale(0.963) translate(-108 -108)"/>
+    <use href="#bh" stroke="#d9454c" stroke-width="2.3" stroke-opacity="0.32" stroke-dasharray="28 25 97 9 112 28 72 17" transform="translate(108 108) scale(0.852) translate(-108 -108)"/>
+    <use href="#bh" stroke="#d9454c" stroke-width="2.4" stroke-opacity="0.48" stroke-dasharray="49 10 59 25 26 19 92 21" transform="translate(108 108) scale(1.145) translate(-108 -108)"/>
+    <use href="#bh" stroke="#d9454c" stroke-width="1.8" stroke-opacity="0.41" stroke-dasharray="43 27 105 13 102 16 43 7" transform="translate(108 108) scale(0.873) translate(-108 -108)"/>
+    <use href="#bh" stroke="#d9454c" stroke-width="1.4" stroke-opacity="0.33" stroke-dasharray="107 21 84 29 33 26 28 28" transform="translate(108 108) scale(1.038) translate(-108 -108)"/>
+    <use href="#bh" stroke="#d9454c" stroke-width="2.7" stroke-opacity="0.58" stroke-dasharray="45 25 105 14 108 20 88 28" transform="translate(108 108) scale(1.015) translate(-108 -108)"/>
+    <use href="#bh" stroke="#d9454c" stroke-width="2.7" stroke-opacity="0.55" stroke-dasharray="49 20 86 30 81 20 96 14" transform="translate(108 108) scale(0.856) translate(-108 -108)"/>
+    <use href="#bh" stroke="#d9454c" stroke-width="2.6" stroke-opacity="0.55" stroke-dasharray="62 17 61 17 29 8 89 33" transform="translate(108 108) scale(0.993) translate(-108 -108)"/>
+    <use href="#bh" stroke="#d9454c" stroke-width="1.9" stroke-opacity="0.44" stroke-dasharray="81 17 29 28 35 13 102 26" transform="translate(108 108) scale(0.933) translate(-108 -108)"/>
+    <use href="#bh" stroke="#d9454c" stroke-width="3.0" stroke-opacity="0.52" stroke-dasharray="68 17 29 7 119 30 51 28" transform="translate(108 108) scale(0.922) translate(-108 -108)"/>
+    <use href="#bh" stroke="#d9454c" stroke-width="3.3" stroke-opacity="0.35" stroke-dasharray="111 9 76 23 42 20 120 21" transform="translate(108 108) scale(0.980) translate(-108 -108)"/>
+    <use href="#bh" stroke="#f1ece6" stroke-width="0.8" stroke-opacity="0.41" stroke-dasharray="28 11 92 28 44 11 61 29" transform="translate(108 108) scale(1.038) translate(-108 -108)"/>
+    <use href="#bh" stroke="#f1ece6" stroke-width="1.1" stroke-opacity="0.42" stroke-dasharray="53 13 114 24 116 10 78 28" transform="translate(108 108) scale(0.906) translate(-108 -108)"/>
+    <use href="#bh" stroke="#f1ece6" stroke-width="0.9" stroke-opacity="0.37" stroke-dasharray="98 6 97 18 49 30 66 33" transform="translate(108 108) scale(0.909) translate(-108 -108)"/>
+    <use href="#bh" stroke="#f1ece6" stroke-width="1.0" stroke-opacity="0.42" stroke-dasharray="92 23 109 10 116 13 107 23" transform="translate(108 108) scale(0.968) translate(-108 -108)"/>
+        </g>
+      </g>
+    </svg>
+
+    <a class="cue" href="#question">
+      <span>тебе письмо 💌</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15m0 0-6-6m6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </header>
+
+  <!-- ============ 2. Письмо с вопросом ============ -->
+  <section class="question" id="question" aria-labelledby="question-title">
+    <div class="envelope">
+      <svg class="envelope__back" viewBox="0 0 360 360" aria-hidden="true">
+        <defs>
+          <linearGradient id="env-flap" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#8a1c1f"/><stop offset="1" stop-color="#a5292c"/>
+          </linearGradient>
+          <linearGradient id="env-inside" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#761518"/><stop offset=".6" stop-color="#8e1e21"/>
+          </linearGradient>
+        </defs>
+        <path d="M8 150 180 -24 352 150Z" fill="url(#env-flap)" stroke="#8a1c1f" stroke-width="6" stroke-linejoin="round"/>
+        <rect x="8" y="146" width="344" height="210" rx="7" fill="url(#env-inside)"/>
+      </svg>
+
+      <div class="letter">
+        <div class="letter__inner">
+          <p class="letter__hello"><span class="ink">Мой</span> любимый человек,</p>
+          <p class="letter__text">этот сайт создан ради одного-единственного вопроса:</p>
+          <h2 class="letter__q" id="question-title">Пойдёшь со мной на <em>свидание</em>?</h2>
+        </div>
+        <div class="stamp" aria-hidden="true"><span>да!</span></div>
+      </div>
+
+      <svg class="envelope__front" viewBox="0 0 360 360" aria-hidden="true">
+        <defs>
+          <linearGradient id="env-side-l" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#b3302f"/><stop offset="1" stop-color="#c83c3b"/>
+          </linearGradient>
+          <linearGradient id="env-side-r" x1="1" y1="0" x2="0" y2="0">
+            <stop offset="0" stop-color="#a9292b"/><stop offset="1" stop-color="#bf3637"/>
+          </linearGradient>
+          <linearGradient id="env-bottom" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#b92f31"/><stop offset="1" stop-color="#a02628"/>
+          </linearGradient>
+          <clipPath id="env-clip"><rect x="8" y="146" width="344" height="210" rx="7"/></clipPath>
+        </defs>
+        <g clip-path="url(#env-clip)">
+          <path d="M8 146 196 266 8 360Z" fill="url(#env-side-l)"/>
+          <path d="M352 146 164 266 352 360Z" fill="url(#env-side-r)"/>
+          <path d="M-4 364 180 222 364 364Z" fill="url(#env-bottom)" stroke="#a52a2c" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M8 356 180 224 352 356" fill="none" stroke="#e0615f" stroke-opacity=".4" stroke-width="1.2" stroke-linejoin="round"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="answers">
+      <button class="btn btn--yes" type="button">конечно 😍</button>
+      <span class="no-slot"><button class="btn btn--no" type="button">нет 😠</button></span>
+    </div>
+    <p class="tease" aria-live="polite"></p>
+  </section>
+
+  <!-- ============ 3. Всё, что откроется после «конечно» ============ -->
+  <div class="details" id="details">
+
+    <section class="yay" aria-labelledby="yay-title">
+      <h2 class="script yay__title" id="yay-title" tabindex="-1">Отлично!</h2>
+      <p class="yay__text">Я и не сомневался, что ты выберешь именно этот вариант 😌</p>
+      <p class="yay__hint">а теперь — все подробности</p>
+    </section>
+
+    <section class="when reveal" aria-labelledby="when-title">
+      <h2 class="script when__month" id="when-title">
+        <span data-bind="month">Октябрь</span> <span class="red" data-bind="year">2026</span>
+      </h2>
+      <ol class="days" data-days aria-hidden="true"></ol>
+      <p class="when__line"><span data-bind="weekday">суббота</span>, <span data-bind="dayMonth">3 октября</span> · <span data-bind="time">19:00</span></p>
+      <div class="countdown" data-countdown>
+        <p class="countdown__label" data-countdown-label>до нашего свидания осталось</p>
+        <div class="countdown__grid" data-countdown-grid>
+          <div><b data-cd="d">0</b><span data-cd-label="d">дней</span></div>
+          <div><b data-cd="h">00</b><span data-cd-label="h">часов</span></div>
+          <div><b data-cd="m">00</b><span data-cd-label="m">минут</span></div>
+          <div><b data-cd="s">00</b><span data-cd-label="s">секунд</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="plan" aria-label="План вечера">
+      <article class="stop stop--meet reveal">
+        <h3 class="script stop__title">Встреча</h3>
+        <p class="stop__time"><span data-bind="time">19:00</span><small>зайду за тобой</small></p>
+        <div class="stop__patches" aria-hidden="true">
+          <svg class="patch"><use href="#i-patch"/></svg>
+          <svg class="patch"><use href="#i-patch"/></svg>
+        </div>
+      </article>
+
+      <svg class="plan__route reveal" viewBox="0 0 300 90" aria-hidden="true">
+        <path d="M46 4C58 58 140 22 186 46S252 88 262 70" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray=".1 9"/>
+        <use href="#heart-path" fill="currentColor" transform="translate(255 52) scale(.15)"/>
+      </svg>
+
+      <article class="stop stop--where reveal">
+        <h3 class="script stop__title">Куда идём?</h3>
+        <div data-place-secret>
+          <p class="stop__time">сюрприз 🤫<small>узнаешь на месте</small></p>
+        </div>
+        <div data-place-known hidden>
+          <p class="stop__place" data-bind="placeName"></p>
+          <p class="stop__addr">
+            <svg class="i-heart" aria-hidden="true"><use href="#i-heart"/></svg>
+            <a data-map href="#" target="_blank" rel="noopener" data-bind="placeAddress"></a>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="dress reveal" aria-labelledby="dress-title">
+      <h2 class="script dress__title" id="dress-title"><span class="red">Дресс</span> - код:</h2>
+      <p class="dress__text">просто быть красивой</p>
+      <p class="script dress__always">как всегда <svg class="i-heart" aria-hidden="true"><use href="#i-heart"/></svg></p>
+    </section>
+
+    <section class="card reveal" aria-labelledby="card-title">
+      <div class="card__top">
+        <h2 class="script card__title" id="card-title">И ещё,</h2>
+        <p>ни о&nbsp;чём не&nbsp;переживай: всё остальное&nbsp;— <b><i>моя забота</i></b>. От&nbsp;тебя нужны только хорошее настроение и&nbsp;твоя улыбка</p>
+      </div>
+      <svg class="card__heart" viewBox="-4 -4 108 98" aria-hidden="true"><use href="#heart-path"/></svg>
+      <div class="card__bottom">
+        <p>планы поменялись или хочется что-то уточнить? <b><i>просто напиши мне</i></b>&nbsp;— я&nbsp;всегда на&nbsp;связи</p>
+      </div>
+    </section>
+
+    <section class="rsvp reveal" aria-labelledby="rsvp-title">
+      <h2 class="script rsvp__title" id="rsvp-title">Пожалуйста,</h2>
+      <p class="rsvp__text">подтверди своё «да» ещё и&nbsp;<b><i>ответным сообщением</i></b>&nbsp;— хочу сохранить его на&nbsp;память</p>
+      <div class="rsvp__actions">
+        <a class="pill" data-calendar href="#">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 10h17M8 3v4m8-4v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          добавить в календарь
+        </a>
+        <a class="pill pill--ghost" data-map data-place-only href="#" target="_blank" rel="noopener" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          как добраться
+        </a>
+      </div>
+    </section>
+
+    <section class="final reveal" aria-label="До встречи">
+      <figure class="polaroid polaroid--big polaroid--develop" style="--r:2deg">
+        <div class="polaroid__photo">
+          <img src="img/us.webp" width="760" height="813" loading="lazy" alt="Мы вдвоём">
+        </div>
+        <figcaption><span class="ink">до</span> <span class="red">встречи!</span></figcaption>
+      </figure>
+      <svg class="final__heart" aria-hidden="true"><use href="#i-crayon"/></svg>
+    </section>
+  </div>
+</div>
+
+<canvas class="fx" aria-hidden="true"></canvas>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
