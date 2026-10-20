@@ -1,38 +1,36 @@
-# 💌 Приглашение на свидание
+# 💌 Date invitation
 
-Сайт: **https://h010grams.github.io/date/**
+**Live site:** https://h010grams.github.io/date/
 
-Одностраничное приглашение: письмо с вопросом «Пойдёшь со мной на свидание?»,
-кнопка «конечно 😍» и кнопка «нет 😠», которая убегает от курсора и пальца —
-нажать её невозможно. После «конечно» появляется «Отлично! Я и не сомневался…»
-и вся информация о свидании.
+A one-page invitation: a letter asking "Will you go on a date with me?", a "of course 😍" button and a "no 😠" button that runs away from the cursor and the finger — it's impossible to press. After "of course", the page shows "Great! I had no doubt…" and all the details of the date.
 
-## Что где менять
+## What to change and where
 
-| Что | Где |
+| What | Where |
 | --- | --- |
-| Дата и время | `config.js` |
-| Место (пока секрет) | `config.js` → `place` |
-| Тексты (письмо, план, дресс-код, P.S.) | `index.html` |
-| Фотография | заменить `img/us.webp` своей (лучше вертикальной) |
+| Date and time | `config.js` |
+| Place (secret for now) | `config.js` → `place` |
+| Texts (letter, plan, dress code, P.S.) | `index.html` |
+| Photo | replace `img/us.webp` with your own (portrait works best) |
 
-Пока место в `config.js` не указано, в блоке «Куда идём?» написано «сюрприз 🤫»,
-а кнопки «как добраться» нет. Если вписать название и адрес — появятся адрес
-и кнопка с картой.
+While no place is set in `config.js`, the "Where are we going?" block says "surprise 🤫" and there is no "how to get there" button. Once you add a name and an address, the address and a map button appear.
 
-Сайт публикуется GitHub Pages из ветки `gh-pages`: после изменений отправь их
-туда (`git push origin main:gh-pages`) — сайт обновится примерно через минуту.
+The site is published by GitHub Pages from the `gh-pages` branch: after making changes, push them there (`git push origin main:gh-pages`) — the site updates in about a minute.
 
-## Как посмотреть локально
+## Running locally
 
-Открыть `index.html` в браузере (или через Live Server в VS Code).
-Чтобы сразу увидеть подробности, не отвечая на вопрос, добавь к адресу `?yes`.
+Open `index.html` in a browser (or use Live Server in VS Code).
+To see the details right away without answering the question, add `?yes` to the address.
 
-## Файлы
+## Files
 
-- `index.html` — разметка и тексты
-- `style.css` — оформление
-- `app.js` — логика (убегающая кнопка, сердечки, календарь, обратный отсчёт)
-- `config.js` — дата, время, место
-- `fonts/` — шрифты Comforter и Montserrat (лицензия SIL OFL, см. `fonts/OFL.txt`)
-- `img/` — фотография и картинка-превью для ссылки
+- `index.html` — markup and texts
+- `style.css` — styling
+- `app.js` — logic (the runaway button, hearts, calendar, countdown)
+- `config.js` — date, time, place
+- `fonts/` — Comforter and Montserrat fonts (SIL Open Font License, see `fonts/OFL.txt`)
+- `img/` — photo and link preview image
+
+## Author
+
+**Nikita Kolotusha** — GitHub: [@h010grams](https://github.com/h010grams)
